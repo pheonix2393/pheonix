@@ -10,7 +10,8 @@ function clock() {
 		'pheonix-1',
 		'pheonix-2',
 		'pheonix-3',
-		'pheonix-4'
+		'pheonix-4',
+		'pheonix-5'
 	];
 
 	return remotes.map(push);
