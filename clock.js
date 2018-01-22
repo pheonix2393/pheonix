@@ -20,9 +20,8 @@ function clock() {
 
 function push(remote) {
 	return exec(`scripts/push.sh ${remote}`, function(error, stdout, stderr) {
-		if (error) console.log(error);
 		console.log(moment().format('dddd, MMMM Do YYYY, h:mm:ss a'));
 		// process.stdout.write(stdout);
-		process.stderr.write(stderr);
+		// process.stderr.write(stderr);
 	});
 }
