@@ -1,5 +1,5 @@
 'use strict';
 require('dotenv').config();
-require('./start');
+require('./lib/start');
 
 setTimeout(async () => await process.exit(), 60000 * 10);

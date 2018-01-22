@@ -1,3 +1,3 @@
 #!/bin/bash
 
-node clock.js
+node lib/clock.js
