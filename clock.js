@@ -1,6 +1,7 @@
 'use strict';
 
 const exec = require('child_process').exec;
+const moment = require('moment');
 
 clock();
 setInterval(clock, 480000);
@@ -20,7 +21,8 @@ function clock() {
 function push(remote) {
 	return exec(`scripts/push.sh ${remote}`, function(error, stdout, stderr) {
 		if (error) console.log(error);
-		process.stdout.write(stdout);
+		console.log(moment().format('dddd, MMMM Do YYYY, h:mm:ss a'));
+		// process.stdout.write(stdout);
 		process.stderr.write(stderr);
 	});
 }
