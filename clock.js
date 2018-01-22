@@ -4,24 +4,12 @@ const exec = require('child_process').exec;
 const moment = require('moment');
 
 clock();
-setInterval(clock, 480000);
-
-function clock() {
-	const remotes = [
-		'pheonix-1',
-		'pheonix-2',
-		'pheonix-3',
-		'pheonix-4',
-		'pheonix-5'
-	];
-
-	return remotes.map(push);
-}
+setInterval(push, 480000);
 
 function push(remote) {
 	return exec(`scripts/push.sh ${remote}`, function(error, stdout, stderr) {
 		console.log(moment().format('dddd, MMMM Do YYYY, h:mm:ss a'));
-		// process.stdout.write(stdout);
-		// process.stderr.write(stderr);
+		process.stdout.write(stdout);
+		process.stderr.write(stderr);
 	});
 }
