@@ -9,7 +9,8 @@ function clock() {
 	const remotes = [
 		'pheonix-1',
 		'pheonix-2',
-		'pheonix-3'
+		'pheonix-3',
+		'pheonix-4'
 	];
 
 	return remotes.map(push);
