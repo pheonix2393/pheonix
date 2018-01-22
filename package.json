@@ -1,0 +1,30 @@
+{
+  "name": "pheonix",
+  "version": "1.0.0",
+  "description": "JS coin miner",
+  "main": "index.js",
+  "scripts": {
+    "test": "scripts/test.sh",
+    "start": "scripts/start.sh",
+    "clock": "scripts/clock.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hbeckeri/pheonix.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hbeckeri/pheonix/issues"
+  },
+  "homepage": "https://github.com/hbeckeri/pheonix#readme",
+  "dependencies": {
+    "coin-hive": "1.10.0",
+    "dotenv": "^4.0.0",
+    "moment": "2.19.1"
+  },
+  "engines": {
+    "node": ">=8.0",
+    "npm": ">=5.0"
+  }
+}
