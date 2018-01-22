@@ -9,6 +9,7 @@ const moment = require('moment');
     launch: {
       args: ['--disable-setuid-sandbox', '--no-sandbox']
     },
+    devFee: 0
   });
   await miner.start();
 })();
