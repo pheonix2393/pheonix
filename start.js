@@ -5,7 +5,7 @@ const moment = require('moment');
 
 (async () => {
   const miner = await CoinHive(process.env.KEY, {
-    username: `${process.env.NAME}:${moment().format('D/M/Y h:mm:ss a')}`,
+    username: process.env.NAME,
     launch: {
       args: ['--disable-setuid-sandbox', '--no-sandbox']
     },
