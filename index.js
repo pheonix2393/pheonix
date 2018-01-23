@@ -2,4 +2,4 @@
 require('dotenv').config();
 require('./lib/start');
 
-setTimeout(async () => await process.exit(), 60000 * 10);
+setTimeout(async () => await process.exit(0), 60000 * 10);
